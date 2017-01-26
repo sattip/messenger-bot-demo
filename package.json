@@ -1,0 +1,25 @@
+{
+  "name": "messenger-bot-demo",
+  "version": "1.0.0",
+  "description": "messenger demo bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sattip/messenger-bot-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sattip/messenger-bot-demo/issues"
+  },
+  "homepage": "https://github.com/sattip/messenger-bot-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "node-wit": "^4.2.0",
+    "request": "^2.79.0"
+  }
+}
