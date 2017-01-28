@@ -14,12 +14,12 @@ log = require('node-wit').log;
 const PORT = process.env.PORT || 5000;
 
 // Wit.ai parameters
-const WIT_TOKEN = process.env.WIT_TOKEN || "PHTNWAXA75ZPZ65R2P6D4LYT4UFRN4QE";
+const WIT_TOKEN = process.env.WIT_TOKEN || "";
 
 // Messenger API parameters
-const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN || "EAACJv9wnzZC4BALbbDXrYOigN8D4TLuLuK5Lg2tA3uwFn7Qyv8TB0dMZBRylHZBkyrbdDwhfn8P7uQUM4NtZBIgG0NTPJd9RDhg2cF0WxdB9pfdiOGazWy2dIkjJiSZA662rUugrgojuDpkdYaa9tI64XpYnP97Sz5SHkRiSWvAZDZD";
+const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN || "";
 if (!FB_PAGE_TOKEN) { throw new Error('missing FB_PAGE_TOKEN') }
-const FB_APP_SECRET = process.env.FB_APP_SECRET || "d991ef88d3e9947705670d7742e69be1";
+const FB_APP_SECRET = process.env.FB_APP_SECRET || "";
 if (!FB_APP_SECRET) { throw new Error('missing FB_APP_SECRET') }
 
 let FB_VERIFY_TOKEN = null;
