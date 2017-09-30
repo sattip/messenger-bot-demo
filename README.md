@@ -10,3 +10,5 @@ Prerequisites:
 - Update `WIT_TOKEN=your_access_token` `FB_APP_SECRET=your_app_secret` `FB_PAGE_TOKEN=your_page_token` 
 - Subscribe your page to the Webhooks using verify_token and `https://<your_ngrok_io>/webhook` as callback URL.
 - Talk to your bot on Messenger!
+
+
