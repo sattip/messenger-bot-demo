@@ -4,6 +4,8 @@ const express = require('express');
 const fetch = require('node-fetch');
 const request = require('request');
 
+var cors = require('cors')
+
 let Wit = null;
 let log = null;
 Wit = require('node-wit').Wit;
@@ -156,7 +158,7 @@ app.use(({method, url}, rsp, next) => {
 app.use(bodyParser.json({ verify: verifyRequestSignature }));
 
 // Webhook setup
-app.get('/webhook', (req, res) => {
+app.get('/webhook', cors(), (req, res) => {
   if (req.query['hub.mode'] === 'subscribe' &&
 	req.query['hub.verify_token'] === FB_VERIFY_TOKEN) {
 	res.send(req.query['hub.challenge']);
